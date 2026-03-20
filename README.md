@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🎨 Fahad's Portfolio
 
 A modern, responsive portfolio website built with **React**, **Vite**, **TailwindCSS**, and **Framer Motion**. Showcasing projects, skills, and contact information with smooth animations and a professional design.
@@ -99,13 +99,7 @@ src/
 - **Skills** — Technical skills and proficiency
 - **Contact** — Contact form and social links
 
-## 🎯 Upcoming Features
 
-- [ ] Blog section
-- [ ] Case studies for projects
-- [ ] Email integration for contact form
-- [ ] Database integration
-- [ ] SEO optimization
 
 ## 📞 Contact
 
