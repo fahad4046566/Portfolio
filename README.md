@@ -123,5 +123,4 @@ This project is open source and available under the MIT License.
 
 Built with ❤️ using React & Vite
 =======
-# Portfolio
->>>>>>> 061362e90a9216bf3ff283d17fb9e0c3c615d3d4
+
