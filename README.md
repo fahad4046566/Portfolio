@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎨 Fahad's Portfolio
 
 A modern, responsive portfolio website built with **React**, **Vite**, **TailwindCSS**, and **Framer Motion**. Showcasing projects, skills, and contact information with smooth animations and a professional design.
@@ -121,3 +122,6 @@ This project is open source and available under the MIT License.
 **Fahad Bashir** — Frontend Developer & React Specialist
 
 Built with ❤️ using React & Vite
+=======
+# Portfolio
+>>>>>>> 061362e90a9216bf3ff283d17fb9e0c3c615d3d4
