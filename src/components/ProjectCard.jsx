@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
-
+import { FiExternalLink } from "react-icons/fi";
+import { VscGithub } from "react-icons/vsc";
 const ProjectCard = ({ project }) => {
   return (
     <motion.div 
@@ -38,10 +39,10 @@ const ProjectCard = ({ project }) => {
         {/* Buttons */}
         <div className="card-actions justify-end gap-2">
           <a href={project.liveUrl} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm">
-            Demo
+           <FiExternalLink /> Demo
           </a>
           <a href={project.githubUrl} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm">
-            Code
+            <VscGithub />Code
           </a>
         </div>
       </div>

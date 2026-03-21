@@ -2,7 +2,7 @@ import recipe from "../assets/Recipe.png";
 import budget from "../assets/budget.png";
 import weather from "../assets/weather.png";
 import ecommerce2 from "../assets/ecommerce-catalog.png";
-import movie from "../assets/Movie.png";
+import movie from "../assets/movie.png";
 export const projects = [
   {
     id: 1,

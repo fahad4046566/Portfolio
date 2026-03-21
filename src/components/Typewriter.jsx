@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const Typewriter = ({ 
+const TypeWriter = ({ 
   text, 
   speed = 100, 
   delay = 0,
@@ -33,4 +33,4 @@ const Typewriter = ({
   )
 }
 
-export default Typewriter
+export default TypeWriter
