@@ -2,7 +2,7 @@ import hero from "../assets/hero.png";
 import { Link } from "react-router-dom";
 import Links from "./Links";
 import { motion } from "framer-motion";
-import TypeWriter from "./TypeWriter";
+import Typewriter from "./Typewriter";
 import { useState, useEffect } from "react";
 const Hero = () => {
   const roles = ["Frontend Developer", "React Specialist", "Problem Solver"];
@@ -38,7 +38,7 @@ const Hero = () => {
             </motion.p>
 
             <h1 className="text-5xl font-bold bg-linear-to-r from-blue-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent">
-              <TypeWriter
+              <Typewriter
                 text={roles[currentRole]}
                 key={currentRole}
                 speed={100}
