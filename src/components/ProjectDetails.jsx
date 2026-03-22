@@ -38,7 +38,7 @@ const ProjectDetails = () => {
           ))}
         </div>
         
-        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed border-l-4 border-primary pl-4 italic">
+        <p className="text-lg md:text-xl mb-8 leading-relaxed border-l-4 border-primary pl-4 italic">
   {project.description}
 </p>
 
