@@ -1,7 +1,9 @@
 import { motion } from "framer-motion"
 import { FiExternalLink } from "react-icons/fi";
 import { VscGithub } from "react-icons/vsc";
+import { NavLink } from "react-router-dom";
 const ProjectCard = ({ project }) => {
+
   return (
     <motion.div 
       className= "border-2 border-blue-950 card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow rounded-xl overflow-hidden h-full"
@@ -44,7 +46,13 @@ const ProjectCard = ({ project }) => {
           <a href={project.githubUrl} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm">
             <VscGithub />Code
           </a>
+           <NavLink to={`/project/${project.id}`} className="btn btn-outline btn-sm">
+            View Details
+           </NavLink>
         </div>
+      </div>
+      <div>
+      
       </div>
     </motion.div>
   )

@@ -9,6 +9,7 @@ import Projects from "./pages/Projects.jsx";
 import Skills from "./pages/Skills.jsx";
 import Contact from "./pages/Contact.jsx";
 import About from "./pages/About.jsx";
+import ProjectDetails from "./components/ProjectDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/projects", element: <Projects /> },
       { path: "/skills", element: <Skills /> },
+      {path:"/project/:id" , element:<ProjectDetails/>},
       { path: "/contact", element: <Contact /> },
       {path:"/about" , element:<About/>}
     ]
