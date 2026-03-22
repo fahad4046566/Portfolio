@@ -49,7 +49,7 @@ const ProjectDetails = () => {
       <span className="w-8 h-1 bg-primary rounded-full"></span>
       About This Project
     </h2>
-    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+    <p className=" leading-relaxed">
       {project.longDescription}
     </p>
   </div>
@@ -71,7 +71,7 @@ const ProjectDetails = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
           </svg>
         </div>
-        <span className="text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors">
+        <span className="group-hover:text-primary transition-colors">
           {feature}
         </span>
       </div>
