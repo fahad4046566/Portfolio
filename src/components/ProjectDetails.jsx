@@ -37,6 +37,7 @@ const ProjectDetails = () => {
             </span>
           ))}
         </div>
+<<<<<<< HEAD
 
         <p className="text-lg md:text-xl mb-8 leading-relaxed border-l-4 border-primary pl-4 italic">
           {project.description}
@@ -86,6 +87,50 @@ const ProjectDetails = () => {
           </div>
         </div>
 
+=======
+        
+        <p className="text-lg md:text-xl mb-8 leading-relaxed border-l-4 border-primary pl-4 italic">
+  {project.description}
+</p>
+
+        
+       <div className="prose prose-lg dark:prose-invert max-w-none mb-12">
+  <div className="bg-base-200 rounded-xl p-6 md:p-8">
+    <h2 className="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-2">
+      <span className="w-8 h-1 bg-primary rounded-full"></span>
+      About This Project
+    </h2>
+    <p className=" leading-relaxed">
+      {project.longDescription}
+    </p>
+  </div>
+</div>
+         <div className="mb-12">
+  <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+    <span className="w-8 h-1 bg-primary rounded-full"></span>
+    Key Features
+  </h3>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {project.features.map((feature, i) => (
+      <div 
+        key={i} 
+        className="flex items-start gap-3 p-4 bg-base-200 rounded-lg hover:bg-primary/10 transition-all duration-300 group"
+      >
+        <div className="shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-1">
+          <svg className="w-3 h-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
+          </svg>
+        </div>
+        <span className="group-hover:text-primary transition-colors">
+          {feature}
+        </span>
+      </div>
+    ))}
+  </div>
+</div>
+        
+>>>>>>> f49d54ec5e2e75c307ce3c4add329ed3659ddc24
         {/* Buttons */}
         <div className="flex gap-4">
           <NavLink to={`/projects`}>
