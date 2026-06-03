@@ -1,11 +1,16 @@
 import hero from "../assets/hero.png";
 import { Link } from "react-router-dom";
 import Links from "./Links";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import Typewriter from "./Typewriter";
 import { useState, useEffect } from "react";
 const Hero = () => {
-  const roles = ["Frontend Developer", "React Specialist", "Problem Solver"];
+  const roles = [
+    "React Specialist",
+    "Laravel Backend Dev",
+    "Full-Stack Devloper",
+  ];
 
   const [currentRole, setCurrentRole] = useState(0);
 
@@ -15,6 +20,7 @@ const Hero = () => {
     }, 4000);
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -51,9 +57,9 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              I'm a passionate React developer focused on building fast and
-              user-friendly web applications. I enjoy solving complex problems,
-              working with APIs, and transforming ideas into real products.
+              I'm a self-taught full-stack web developer building custom web
+              applications with React, Laravel, and Node.js. I turn complex
+              business needs into fast, secure, and scalable digital solutions.
             </motion.p>
           </div>
 

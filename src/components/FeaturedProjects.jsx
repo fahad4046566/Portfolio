@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
+import { NavLink } from 'react-router-dom'
 
 const FeaturedProjects = ({ project }) => {
   return (
@@ -52,22 +54,29 @@ const FeaturedProjects = ({ project }) => {
         </div>
 
         <div className="card-actions pt-4">
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="btn btn-primary gap-2"
-          >
-            <FiExternalLink /> Live Demo
-          </a>
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="btn btn-outline gap-2"
-          >
-            <FiGithub /> View Code
-          </a>
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="btn btn-primary gap-2"
+            >
+              <FiExternalLink /> Live Demo
+            </a>
+          )}
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="btn btn-outline gap-2"
+            >
+              <FiGithub /> View Code
+            </a>
+          )}
+          <NavLink to={`/project/${project.id}`} className="btn btn-ghost">
+            More Details
+          </NavLink>
         </div>
       </div>
     </motion.div>

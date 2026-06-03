@@ -10,21 +10,22 @@ import movie2 from "../assets/movie2.png";
 export const projects = [
   {
     id: 1,
-    title: "E-commerce Product Catalog",
-    description: "Full-featured shopping experience with advanced filtering",
-    longDescription: "Detailed description for modal/detail view...",
+    title: "Full-Stack E-commerce with Stripe Payments",
+    description: "Complete payment-ready online store with cart, orders, and webhooks",
+    longDescription: "Built a production-ready e-commerce platform using React frontend, Laravel backend, and Stripe payment gateway. Features include user authentication, product management, shopping cart, order processing, and Stripe webhooks for payment confirmation. This project demonstrates full-stack capabilities from UI to database to payment integration.",
     image: ecommerce2,
     fullImage: ecommerce2,
-    techStack: ["React", "ShadCN UI", "Context API", "useReducer"],
+    techStack: ["React", "Laravel", "Stripe API", "MySQL", "REST API", "Webhooks"],
     features: [
-      "Advanced filtering (category, search, sort)",
-      "Cart management with localStorage",
-      "Product carousel"
+      "User authentication (register/login)",
+      "Product listing with dynamic cart",
+      "Order placement & checkout flow",
+      "Stripe payment integration (test mode)",
+      "Webhook handling for payment confirmation",
+      "Admin panel for product management (from blog project)"
     ],
-    liveUrl: "https://ecommerce-catalog-gamma-peach.vercel.app/",
-    githubUrl: "https://github.com/fahad4046566/Ecommerce-Catalog",
-    featured: true 
-  },
+    featured: true,
+},
  {
     id: 2,
     title: "Movie Explorer",

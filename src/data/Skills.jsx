@@ -12,6 +12,9 @@ import { VscVscode } from "react-icons/vsc";
 import { GiDaisy } from "react-icons/gi";
 import { SiShadcnui } from "react-icons/si";
 import { MdAnimation } from "react-icons/md";
+import { FaPhp } from "react-icons/fa6";
+import { FaLaravel } from "react-icons/fa6";
+import { TbBrandMysql } from "react-icons/tb";
 
 export const skills = [
   {
@@ -23,6 +26,9 @@ export const skills = [
       { name: "CSS3", level: 80, icon: <FaCss3Alt /> },
       { name: "Tailwind CSS", level: 90, icon: <SiTailwindcss /> },
       { name: "HTML5", level: 95, icon: <TiHtml5 /> },
+      { name: "PHP", level: 80, icon: <FaPhp /> },
+      { name: "MySQL", level: 80, icon: < TbBrandMysql /> },
+      { name: "Laravel", level: 85, icon: <FaLaravel  /> },
     ],
   },
   {
