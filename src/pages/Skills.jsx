@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { skills } from "../data/Skills";
 import SkillCard from "../components/SkillCard";

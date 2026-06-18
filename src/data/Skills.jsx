@@ -15,20 +15,27 @@ import { MdAnimation } from "react-icons/md";
 import { FaPhp } from "react-icons/fa6";
 import { FaLaravel } from "react-icons/fa6";
 import { TbBrandMysql } from "react-icons/tb";
+import { FaFlutter } from "react-icons/fa6";
+import { FaNodeJs } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+
 
 export const skills = [
   {
     id: 1,
-    category: "Frontend",
+    category: "Frontend + Backend",
     skills: [
       { name: "React", level: 90, icon: <IoLogoReact /> },
+      { name: "Flutter", level: 80, icon: <FaFlutter /> },
       { name: "JavaScript", level: 85, icon: <TbBrandJavascript /> },
       { name: "CSS3", level: 80, icon: <FaCss3Alt /> },
       { name: "Tailwind CSS", level: 90, icon: <SiTailwindcss /> },
       { name: "HTML5", level: 95, icon: <TiHtml5 /> },
       { name: "PHP", level: 80, icon: <FaPhp /> },
+      { name: "Laravel", level: 80, icon: <FaLaravel  /> },
+      { name: "Express", level: 85, icon: <FaNodeJs  /> },
       { name: "MySQL", level: 80, icon: < TbBrandMysql /> },
-      { name: "Laravel", level: 85, icon: <FaLaravel  /> },
+      { name: "Mongodb", level: 85, icon: < SiMongodb /> },
     ],
   },
   {

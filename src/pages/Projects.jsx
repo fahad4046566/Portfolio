@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { projects } from "../data/projects";
-import FeaturedProjects from "../components/FeaturedProjects";
+// import FeaturedProjects from "../components/FeaturedProjects";
 import ProjectCard from "../components/ProjectCard";
 import { useEffect } from "react";
 
@@ -9,8 +9,8 @@ const Projects = () => {
    useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
-  const featuredProject = projects.find((p) => p.featured);
-  const otherProjects = projects.filter((p) => !p.featured);
+  // const featuredProject = projects.find((p) => p.featured);
+  // const otherProjects = projects.filter((p) => !p.featured);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -44,29 +44,21 @@ const Projects = () => {
             My Projects
           </h1>
           <p className="text-xl text-base-content/70 max-w-2xl mx-auto">
-            A collection of projects showcasing my skills in React, state
-            management, and modern web development
+            A collection of projects showcasing my skills in React, Express, Laravel , modern web and app development
           </p>
         </motion.div>
 
         {/* Featured project — slide in */}
-        <motion.div
-          className="mb-20"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <FeaturedProjects project={featuredProject} />
-        </motion.div>
+       
 
         {/* Other projects — stagger */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-stretch"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 items-stretch"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          {otherProjects.map((project) => (
+          {projects.map((project) => (
             <motion.div
               key={project.id}
               variants={itemVariants}

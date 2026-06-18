@@ -1,4 +1,4 @@
-import hero from "../assets/hero.png";
+
 import { Link } from "react-router-dom";
 import Links from "./Links";
 // eslint-disable-next-line no-unused-vars
@@ -8,7 +8,9 @@ import { useState, useEffect } from "react";
 const Hero = () => {
   const roles = [
     "React Specialist",
-    "Laravel Backend Dev",
+    "Flutter Developer",
+    "Express Backend Devloper",
+    "Laravel Backend Devloper",
     "Full-Stack Devloper",
   ];
 
@@ -57,8 +59,8 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              I'm a self-taught full-stack web developer building custom web
-              applications with React, Laravel, and Node.js. I turn complex
+              I'm a self-taught full-stack web developer building custom web and mobile app
+              applications with React, Flutter, Laravel, and Node.js Express js. I turn complex
               business needs into fast, secure, and scalable digital solutions.
             </motion.p>
           </div>
@@ -97,8 +99,12 @@ const Hero = () => {
             {/* Image */}
 
             <div className="relative avatar">
-              <div className="w-72 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                <img src={hero} alt="Fahad" />
+              <div className="w-80 h-80 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden flex items-center justify-center">
+                <img
+                  className="w-full h-full object-cover object-[center_35%]"
+                  src="https://res.cloudinary.com/dhfgzrc5w/image/upload/v1781697720/Gemini_Generated_Image_8hsbn88hsbn88hsb_rh6e2k.png"
+                  alt="Fahad"
+                />
               </div>
             </div>
           </div>

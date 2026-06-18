@@ -1,9 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
 import { FiExternalLink } from "react-icons/fi";
 import { VscGithub } from "react-icons/vsc";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const ProjectCard = ({ project }) => {
-
+    const {id, title, btn1 , btn2 , description , frontEnd , backEnd , image} = project
   return (
     <motion.div 
       className= "border-2 border-blue-950 card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow rounded-xl overflow-hidden h-full"
@@ -13,8 +15,8 @@ const ProjectCard = ({ project }) => {
       {/* Image */}
       <figure className="relative overflow-hidden bg-base-200 flex items-center justify-center aspect-video">
         <motion.img 
-          src={project.image} 
-          alt={project.title}
+          src={image} 
+          alt={title}
           className="w-full h-full object-cover object-top"
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.3 }}
@@ -25,8 +27,8 @@ const ProjectCard = ({ project }) => {
       {/* Content */}
       <div className="card-body flex flex-col justify-between gap-3 h-full">
         <div>
-          <h2 className="card-title">{project.title}</h2>
-          <p className="text-sm text-base-content/70 mt-1">{project.description}</p>
+          <h2 className="card-title">{title}</h2>
+          <p className="text-sm text-base-content/70 mt-1">{description}</p>
 
           {/* Tech badges (compact) */}
           <div className="flex flex-wrap gap-2 mt-3">
@@ -40,19 +42,16 @@ const ProjectCard = ({ project }) => {
 
         {/* Buttons */}
         <div className="card-actions justify-end gap-2">
-          <a href={project.liveUrl} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm">
-           <FiExternalLink /> Demo
+          <a href={frontEnd} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm">
+           <VscGithub /> {btn1}
           </a>
-          <a href={project.githubUrl} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm">
-            <VscGithub />Code
+          <a href={backEnd} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm">
+            <VscGithub />{btn2}
           </a>
-           <NavLink to={`/project/${project.id}`} className="btn btn-outline btn-sm">
+           <NavLink to={`/project/${id}`} className="btn btn-outline btn-sm">
             View Details
            </NavLink>
         </div>
-      </div>
-      <div>
-      
       </div>
     </motion.div>
   )
