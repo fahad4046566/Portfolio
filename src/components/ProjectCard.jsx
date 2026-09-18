@@ -1,29 +1,31 @@
 // eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { FaGlobe } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { VscGithub } from "react-icons/vsc";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 const ProjectCard = ({ project }) => {
-    const {id, title, btn1 , btn2 , description , frontEnd , backEnd , image} = project
+  const { id, title, btn1, btn2, description, frontEnd, backEnd, image } =
+    project;
   return (
-    <motion.div 
-      className= "border-2 border-blue-950 card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow rounded-xl overflow-hidden h-full"
-      whileHover={{ y: -10 , boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)"}}
+    <motion.div
+      className="border-2 border-blue-950 card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow rounded-xl overflow-hidden h-full"
+      whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
       transition={{ duration: 0.3 }}
     >
       {/* Image */}
       <figure className="relative overflow-hidden bg-base-200 flex items-center justify-center aspect-video">
-        <motion.img 
-          src={image} 
+        <motion.img
+          src={image}
           alt={title}
           className="w-full h-full object-cover object-top"
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.3 }}
         />
-         <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
       </figure>
-      
+
       {/* Content */}
       <div className="card-body flex flex-col justify-between gap-3 h-full">
         <div>
@@ -42,19 +44,43 @@ const ProjectCard = ({ project }) => {
 
         {/* Buttons */}
         <div className="card-actions justify-end gap-2">
-          <a href={frontEnd} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm">
-           <VscGithub /> {btn1}
+          <a
+            href={frontEnd}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary btn-sm"
+          >
+            <VscGithub /> {btn1}
           </a>
-          <a href={backEnd} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm">
-            <VscGithub />{btn2}
+
+          <a
+            href={backEnd}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-outline btn-sm"
+          >
+            <VscGithub /> {btn2}
           </a>
-           <NavLink to={`/project/${id}`} className="btn btn-outline btn-sm">
+
+          {/* Live button — sirf tab dikhega jab `live` field maujood ho */}
+          {project.live && (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-accent btn-sm"
+            >
+              <FaGlobe /> Live
+            </a>
+          )}
+
+          <NavLink to={`/project/${id}`} className="btn btn-outline btn-sm">
             View Details
-           </NavLink>
+          </NavLink>
         </div>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

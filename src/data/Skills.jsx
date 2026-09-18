@@ -1,68 +1,81 @@
 import { IoLogoReact } from "react-icons/io5";
-import { TbBrandJavascript } from "react-icons/tb";
-import { SiTailwindcss } from "react-icons/si";
+import { TbBrandJavascript, TbBrandMysql, TbBrandNextjs } from "react-icons/tb";
+import { SiTailwindcss, SiMongodb, SiShadcnui, SiTypescript, SiPrisma, SiPostgresql, SiSocketdotio, SiReactquery, SiZod, SiRedis, SiNestjs } from "react-icons/si";
 import { TiHtml5 } from "react-icons/ti";
-import { FaCss3Alt } from "react-icons/fa";
-import { GiMatterStates } from "react-icons/gi";
+import { FaCss3Alt, FaGithub, FaNodeJs } from "react-icons/fa";
+import { GiMatterStates, GiDaisy } from "react-icons/gi";
 import { TbViewportShort } from "react-icons/tb";
-import { MdWebhook } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
+import { MdWebhook, MdAnimation } from "react-icons/md";
 import { IoLogoVercel } from "react-icons/io5";
 import { VscVscode } from "react-icons/vsc";
-import { GiDaisy } from "react-icons/gi";
-import { SiShadcnui } from "react-icons/si";
-import { MdAnimation } from "react-icons/md";
-import { FaPhp } from "react-icons/fa6";
-import { FaLaravel } from "react-icons/fa6";
-import { TbBrandMysql } from "react-icons/tb";
-import { FaFlutter } from "react-icons/fa6";
-import { FaNodeJs } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-
+import { FaPhp, FaLaravel, FaFlutter } from "react-icons/fa6";
 
 export const skills = [
   {
     id: 1,
-    category: "Frontend + Backend",
+    category: "Frontend",
     skills: [
-      { name: "React", level: 90, icon: <IoLogoReact /> },
-      { name: "Flutter", level: 80, icon: <FaFlutter /> },
-      { name: "JavaScript", level: 85, icon: <TbBrandJavascript /> },
-      { name: "CSS3", level: 80, icon: <FaCss3Alt /> },
-      { name: "Tailwind CSS", level: 90, icon: <SiTailwindcss /> },
-      { name: "HTML5", level: 95, icon: <TiHtml5 /> },
-      { name: "PHP", level: 80, icon: <FaPhp /> },
-      { name: "Laravel", level: 80, icon: <FaLaravel  /> },
-      { name: "Express", level: 85, icon: <FaNodeJs  /> },
-      { name: "MySQL", level: 80, icon: < TbBrandMysql /> },
-      { name: "Mongodb", level: 85, icon: < SiMongodb /> },
+      { name: "React", icon: <IoLogoReact /> },
+      { name: "Next.js", icon: <TbBrandNextjs /> },
+      { name: "JavaScript", icon: <TbBrandJavascript /> },
+      { name: "TypeScript", icon: <SiTypescript /> },
+      { name: "Flutter", icon: <FaFlutter /> },
+      { name: "HTML5", icon: <TiHtml5 /> },
+      { name: "CSS3", icon: <FaCss3Alt /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
     ],
   },
   {
     id: 2,
-    category: "State Management",
+    category: "Backend",
     skills: [
-      { name: "Context API", level: 85, icon: <GiMatterStates /> },
-      { name: "useReducer", level: 80, icon: <TbViewportShort /> },
-      { name: "Custom Hooks", level: 75, icon: <MdWebhook /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Express", icon: <FaNodeJs /> },
+      { name: "NestJS", icon: <SiNestjs /> },
+      { name: "PHP", icon: <FaPhp /> },
+      { name: "Laravel", icon: <FaLaravel /> },
+      { name: "Socket.io", icon: <SiSocketdotio /> },
     ],
   },
   {
     id: 3,
-    category: "Tools",
+    category: "Database & ORM",
     skills: [
-      { name: "Git & GitHub", level: 80, icon: <FaGithub /> },
-      { name: "Vercel", level: 85, icon: <IoLogoVercel /> },
-      { name: "VS Code", level: 90, icon: <VscVscode /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "Mongoose", icon: <SiMongodb /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+      { name: "Prisma", icon: <SiPrisma /> },
+      { name: "MySQL", icon: <TbBrandMysql /> },
+      { name: "Redis", icon: <SiRedis /> },
     ],
   },
   {
     id: 4,
+    category: "State & Data",
+    skills: [
+      { name: "Context API", icon: <GiMatterStates /> },
+      { name: "useReducer", icon: <TbViewportShort /> },
+      { name: "Custom Hooks", icon: <MdWebhook /> },
+      { name: "TanStack Query", icon: <SiReactquery /> },
+      { name: "Zod", icon: <SiZod /> },
+    ],
+  },
+  {
+    id: 5,
     category: "UI Libraries",
     skills: [
-      { name: "DaisyUI", level: 90, icon: <GiDaisy /> },
-      { name: "ShadCN UI", level: 85, icon: <SiShadcnui /> },
-      { name: "Framer Motion", level: 70, icon: <MdAnimation /> },
+      { name: "DaisyUI", icon: <GiDaisy /> },
+      { name: "ShadCN UI", icon: <SiShadcnui /> },
+      { name: "Framer Motion", icon: <MdAnimation /> },
+    ],
+  },
+  {
+    id: 6,
+    category: "Tools",
+    skills: [
+      { name: "Git & GitHub", icon: <FaGithub /> },
+      { name: "Vercel", icon: <IoLogoVercel /> },
+      { name: "VS Code", icon: <VscVscode /> },
     ],
   },
 ];

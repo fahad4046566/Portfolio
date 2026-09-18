@@ -60,7 +60,7 @@ const Hero = () => {
               transition={{ delay: 0.8 }}
             >
               I'm a self-taught full-stack web developer building custom web and mobile app
-              applications with React, Flutter, Laravel, and Node.js Express js. I turn complex
+              applications with React, Flutter, Laravel, Node.js Express.js and Nest.js. I turn complex
               business needs into fast, secure, and scalable digital solutions.
             </motion.p>
           </div>
@@ -102,7 +102,7 @@ const Hero = () => {
               <div className="w-80 h-80 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden flex items-center justify-center">
                 <img
                   className="w-full h-full object-cover object-[center_35%]"
-                  src="https://res.cloudinary.com/dhfgzrc5w/image/upload/v1781697720/Gemini_Generated_Image_8hsbn88hsbn88hsb_rh6e2k.png"
+                  src="https://res.cloudinary.com/dhfgzrc5w/image/upload/v1789705492/Gemini_Generated_Image_8hsbn88hsbn88hsb_ha6axu.png"
                   alt="Fahad"
                 />
               </div>
